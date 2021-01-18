@@ -43,11 +43,11 @@ const SourceLayout = ({
 
   const getSeoImage = () => {
     if (featuredImage) {
-      return `${siteUrl}${featuredImage.childImageSharp.fluid.src}`
+      return `${siteUrl}${featuredImage.childImageSharp.original.src}`
     }
 
     if (featuredImageUrlSharp) {
-      return `${siteUrl}${featuredImageUrlSharp.childImageSharp.fluid.src}`
+      return `${siteUrl}${featuredImageUrlSharp.childImageSharp.original.src}`
     }
 
     return siteImage
@@ -108,6 +108,7 @@ const SourceLayout = ({
 // This query is a duplicate of useAllMdx so if you update this one update that one too! in data/useAllMdx
 // test id: c147b696-2ac9-58b3-a3e6-17d8402289e0
 // draft id: c2a66bb2-6fc4-5b03-94f1-e31abea07a59
+// remote image id: afe07aff-74e6-5e34-acf4-af917d0855bb
 
 export const singleMdx = graphql`
   query singleMdx($id: String) {
@@ -121,12 +122,13 @@ export const singleMdx = graphql`
       }
       featuredImageUrlSharp {
         childImageSharp {
+          gatsbyImageData(maxWidth: 800, layout: FLUID, placeholder: BLURRED)
           original {
             width
             height
             src
           }
-          fluid(maxWidth: 1200, quality: 90) {
+          fluid(maxWidth: 800, quality: 90) {
             ...GatsbyImageSharpFluid
           }
           fixed(quality: 90) {
@@ -148,6 +150,7 @@ export const singleMdx = graphql`
         pinned
         featuredImage {
           childImageSharp {
+            gatsbyImageData(maxWidth: 800, layout: FLUID, placeholder: BLURRED)
             original {
               width
               height
@@ -162,15 +165,15 @@ export const singleMdx = graphql`
             id
           }
         }
-        featuredImageUrl
         embeddedImages {
           childImageSharp {
+            gatsbyImageData(maxWidth: 800, layout: FLUID, placeholder: BLURRED)
             original {
               width
               height
               src
             }
-            fluid(maxWidth: 1200, quality: 90) {
+            fluid(maxWidth: 800, quality: 90) {
               ...GatsbyImageSharpFluid
             }
             fixed(quality: 90) {

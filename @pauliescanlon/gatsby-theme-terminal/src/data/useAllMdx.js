@@ -28,6 +28,11 @@ export const useAllMdx = filter => {
             }
             featuredImageUrlSharp {
               childImageSharp {
+                gatsbyImageData(
+                  maxWidth: 400
+                  layout: FLUID
+                  placeholder: BLURRED
+                )
                 original {
                   width
                   height
@@ -55,12 +60,17 @@ export const useAllMdx = filter => {
               pinned
               featuredImage {
                 childImageSharp {
+                  gatsbyImageData(
+                    maxWidth: 400
+                    layout: FLUID
+                    placeholder: BLURRED
+                  )
                   original {
                     width
                     height
                     src
                   }
-                  fluid(maxWidth: 1200, quality: 90) {
+                  fluid(maxWidth: 400, quality: 90) {
                     ...GatsbyImageSharpFluid
                   }
                   fixed(quality: 90) {
@@ -72,12 +82,17 @@ export const useAllMdx = filter => {
               featuredImageUrl
               embeddedImages {
                 childImageSharp {
+                  gatsbyImageData(
+                    maxWidth: 800
+                    layout: FLUID
+                    placeholder: BLURRED
+                  )
                   original {
                     width
                     height
                     src
                   }
-                  fluid(maxWidth: 1200, quality: 90) {
+                  fluid(maxWidth: 800, quality: 90) {
                     ...GatsbyImageSharpFluid
                   }
                   fixed(quality: 90) {

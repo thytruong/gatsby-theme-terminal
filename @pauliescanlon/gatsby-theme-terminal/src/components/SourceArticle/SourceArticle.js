@@ -13,7 +13,7 @@ import {
 } from '@theme-ui/components'
 import { mix } from '@theme-ui/color'
 import { format } from 'date-fns'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import { Main } from '../Main'
 
@@ -33,6 +33,7 @@ export const SourceArticle = ({
   timeToRead,
   wordCount,
 }) => {
+  const imageData = getImage(featuredImageUrlSharp || featuredImage)
   return (
     <Main>
       {title ? (
@@ -45,18 +46,7 @@ export const SourceArticle = ({
           )}
 
           <Box sx={{ mb: 4 }}>
-            {featuredImage && featuredImage.childImageSharp && (
-              <Img
-                fluid={featuredImage.childImageSharp.fluid}
-                alt={featuredImage.childImageSharp.fluid.originalName}
-              />
-            )}
-            {featuredImageUrlSharp && featuredImageUrlSharp.childImageSharp && (
-              <Img
-                fluid={featuredImageUrlSharp.childImageSharp.fluid}
-                alt={featuredImageUrlSharp.childImageSharp.fluid.originalName}
-              />
-            )}
+            <GatsbyImage image={imageData} alt={title} />
           </Box>
           <Heading as="h1" variant="styles.h1" sx={{ mb: 4 }}>
             {title}
