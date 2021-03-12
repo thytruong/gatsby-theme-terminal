@@ -1,5 +1,5 @@
 {
-  "name": "@pauliescanlon/gatsby-theme-terminal",
+  "name": "@thytruong/gatsby-theme-terminal",
   "description": "A zero component Gatsby theme for developers",
   "version": "0.0.49",
   "author": "Paul Scanlon <pauliescanlon@gmail.com>",
@@ -47,10 +47,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pauliescanlon/gatsby-theme-terminal.git"
+    "url": "git+https://github.com/thytruong/gatsby-theme-terminal.git"
   },
   "bugs": {
-    "url": "https://github.com/pauliescanlon/gatsby-theme-terminal/issues"
+    "url": "https://github.com/thytruong/gatsby-theme-terminal/issues"
   },
   "homepage": "https://gatsby-theme-terminal.netlify.com/",
   "main": "index.js"
