@@ -18,9 +18,9 @@ export const Logo = () => (
       xmlns="http://www.w3.org/2000/svg"
       x={0}
       y={0}
-      viewBox="0 -30 1300 100"
-      width="600"
-      height="200"
+      viewBox="0 100 0 0"
+      width="800"
+      height="260"
       xmlSpace="preserve"
     >
       <style>

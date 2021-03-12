@@ -30,6 +30,8 @@ export const Nav = () => {
             'flex-end',
           ],
           overFlow: 'hidden',
+          mt:70,
+          mr:100,
           px: 4,
         }}
       >
@@ -47,7 +49,7 @@ export const Nav = () => {
           as="ul"
           sx={{
             listStyle: 'none',
-            mt: 2,
+            mt: 100,
             p: 0,
           }}
         >
