@@ -15,9 +15,9 @@ export const Logo = () => (
     <GatsbyLink to="/">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={216.53}
-      height={93.33}
-      viewBox="0 0 57.29 24.694"
+      width={260.53}
+      height={160.33}
+      viewBox="-15 -8 85.29 25.694"
     >
       <path
         className="prefix__st3"

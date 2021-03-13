@@ -30,7 +30,7 @@ export const Nav = () => {
             'flex-end',
           ],
           overFlow: 'hidden',
-          mt:70,
+          mt:0,
           mr:100,
           px: 4,
         }}
@@ -43,13 +43,14 @@ export const Nav = () => {
           height: '100%',
           py: 3,
           px: 4,
+          
         }}
       >
         <Box
           as="ul"
           sx={{
             listStyle: 'none',
-            mt: 100,
+            mt: 80,
             p: 0,
           }}
         >
