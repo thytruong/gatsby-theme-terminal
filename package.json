@@ -1,0 +1,93 @@
+{
+  "_from": "git+https://github.com/thytruong/gatsby-theme-terminal.git",
+  "_id": "@thytruong/gatsby-theme-terminal@0.0.49",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@thytruong/gatsby-theme-terminal",
+  "_phantomChildren": {
+    "@theme-ui/color-modes": "0.3.5",
+    "@theme-ui/components": "0.3.5",
+    "@theme-ui/core": "0.3.5",
+    "@theme-ui/css": "0.3.5",
+    "@theme-ui/mdx": "0.3.5",
+    "@theme-ui/theme-provider": "0.3.5",
+    "prism-react-renderer": "1.2.0"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "@thytruong/gatsby-theme-terminal@git+https://github.com/thytruong/gatsby-theme-terminal.git",
+    "name": "@thytruong/gatsby-theme-terminal",
+    "escapedName": "@thytruong%2fgatsby-theme-terminal",
+    "scope": "@thytruong",
+    "rawSpec": "git+https://github.com/thytruong/gatsby-theme-terminal.git",
+    "saveSpec": "git+https://github.com/thytruong/gatsby-theme-terminal.git",
+    "fetchSpec": "https://github.com/thytruong/gatsby-theme-terminal.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/thytruong/gatsby-theme-terminal.git#ea339e9224d5aaf653b689dad3d37d7cf61b87db",
+  "_spec": "@thytruong/gatsby-theme-terminal@git+https://github.com/thytruong/gatsby-theme-terminal.git",
+  "_where": "C:\\Users\\thytr\\Documents\\Dev\\memoire2021",
+  "author": {
+    "name": "Paul Scanlon",
+    "email": "pauliescanlon@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/thytruong/gatsby-theme-terminal/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@emotion/core": "10.0.28",
+    "@theme-ui/color": "0.3.0",
+    "@theme-ui/prism": "0.3.0",
+    "date-fns": "2.10.0",
+    "gatsby-image": "2.2.41",
+    "gatsby-plugin-react-helmet": "3.1.22",
+    "gatsby-plugin-sharp": "2.4.5",
+    "gatsby-plugin-theme-ui": "0.3.0",
+    "gatsby-transformer-sharp": "2.3.14",
+    "prop-types": "15.7.2",
+    "react-helmet": "5.2.1",
+    "theme-ui": "0.3.1"
+  },
+  "deprecated": false,
+  "description": "A zero component Gatsby theme for developers",
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "homepage": "https://gatsby-theme-terminal.netlify.com/",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@thytruong/gatsby-theme-terminal",
+  "peerDependencies": {
+    "@mdx-js/mdx": "^1.5.5",
+    "@mdx-js/react": "^1.5.5",
+    "gatsby": "2.30.0",
+    "gatsby-plugin-mdx": "^1.0.73",
+    "gatsby-source-filesystem": "^2.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thytruong/gatsby-theme-terminal.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json}\"",
+    "publish": "npm login",
+    "serve": "gatsby serve",
+    "start": "npm run develop",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "version": "0.0.49"
+}
