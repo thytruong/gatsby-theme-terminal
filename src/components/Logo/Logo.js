@@ -18,6 +18,7 @@ export const Logo = () => (
       width={260.53}
       height={160.33}
       viewBox="-15 -8 85.29 25.694"
+
     >
       <path
         className="prefix__st3"
