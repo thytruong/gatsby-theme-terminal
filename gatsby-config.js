@@ -41,16 +41,6 @@ module.exports = themeOptions => {
       },
     },
     plugins: [
-      {
-        resolve: 'gatsby-transformer-remark',
-        options: {
-          plugins: [
-            'gatsby-remark-graphviz',
-            // place before other plugins that modify code blocks (such as prismjs)
-            // 'gatsby-remark-prismjs',
-          ]
-        }
-      },
       `gatsby-plugin-react-helmet`,
       `gatsby-plugin-sharp`,
       `gatsby-transformer-sharp`,
