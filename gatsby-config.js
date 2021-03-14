@@ -41,10 +41,6 @@ module.exports = themeOptions => {
       },
     },
     plugins: [
-      `gatsby-plugin-react-helmet`,
-      `gatsby-plugin-sharp`,
-      `gatsby-transformer-sharp`,
-      `gatsby-plugin-theme-ui`,
       {
         resolve: 'gatsby-transformer-remark',
         options: {
@@ -55,6 +51,11 @@ module.exports = themeOptions => {
           ]
         }
       },
+      `gatsby-plugin-react-helmet`,
+      `gatsby-plugin-sharp`,
+      `gatsby-transformer-sharp`,
+      `gatsby-plugin-theme-ui`,
+
       {
         resolve: `gatsby-plugin-mdx`,
         options: {
