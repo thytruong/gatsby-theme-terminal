@@ -47,6 +47,8 @@
     "gatsby-plugin-react-helmet": "3.1.22",
     "gatsby-plugin-sharp": "2.4.5",
     "gatsby-plugin-theme-ui": "0.3.0",
+    "gatsby-remark-graphviz": "^2.0.0",
+    "gatsby-transformer-remark": "^3.0.0",
     "gatsby-transformer-sharp": "2.3.14",
     "prop-types": "15.7.2",
     "react-helmet": "5.2.1",

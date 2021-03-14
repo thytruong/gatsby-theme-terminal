@@ -46,6 +46,16 @@ module.exports = themeOptions => {
       `gatsby-transformer-sharp`,
       `gatsby-plugin-theme-ui`,
       {
+        resolve: 'gatsby-transformer-remark',
+        options: {
+          plugins: [
+            'gatsby-remark-graphviz',
+            // place before other plugins that modify code blocks (such as prismjs)
+            // 'gatsby-remark-prismjs',
+          ]
+        }
+      },
+      {
         resolve: `gatsby-plugin-mdx`,
         options: {
           extensions: [`.mdx`, `.md`],
