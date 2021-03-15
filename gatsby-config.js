@@ -41,6 +41,15 @@ module.exports = themeOptions => {
       },
     },
     plugins: [
+      {
+        resolve: "gatsby-transformer-remark",
+        options: {
+          // "strategy": "img",
+          "plugins": [
+            "gatsby-remark-draw"
+          ]
+        }
+      }
       `gatsby-plugin-react-helmet`,
       `gatsby-plugin-sharp`,
       `gatsby-transformer-sharp`,
